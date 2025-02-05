@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telcom</title>
+    <title>Business</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap"
@@ -27,6 +27,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 
+    <!-- google fontes oxm -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+        rel="stylesheet">
+    <!-- popines -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,90 +52,243 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 
+
     <style>
-        .gradient-text {
-            font-size: 48px;
-            font-weight: bold;
-            background: linear-gradient(to right, hsl(200, 13%, 95%), #bda9a6, #a12c23, #884f4f, #8a5d5d, #a11d1d);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .service-bar {
+            background-color: rgb(78, 76, 76);
+            height: 60px;
+            display: flex;
+            align-items: center;
+            box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.24);
         }
 
-        .text-box {
-            background-color: rgba(255, 255, 255, 0.3);
+        .service-text {
+            color: white;
+            margin-left: 40px;
+            margin-right: 10px;
+            margin-bottom: 2px;
+        }
+
+        .service-icon {
+            width: 15px;
+            height: 15px;
+            margin-bottom: -3px;
+        }
+
+
+        .image11 {
+            background-image: url(Photos/Bissnuss-fram.webp);
+            width: 100%;
+            height: 440px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-left: 0px;
+        }
+
+        .image11 h1 {
+            font-family: Oxanium;
+            padding-top: 170px;
+            font-size: 49px;
+            margin-left: 70px;
+            color: white;
+        }
+
+        .image11 span {
+            font-family: Inter;
+            font-size: 18px;
+            margin-left: 70px;
+            padding: 10px;
+            background-color: gray;
             border-radius: 20px;
-            max-width: 500px;
-            margin-left: 20px;
-            padding-left: 20px;
-            font-weight: bolder;
+            color: white;
 
         }
 
-        @media (max-width: 767px) {
+        /*  --------------------------------------------------- */
+        .image12 {
+            background-image: url(Photos/Net-Frame\ 29.jpg);
+            width: 100%;
+            height: 415px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
-            h1,
-            h3 {
-                text-align: center;
+        .image12 h1 {
+            font-family: Poppins;
+            padding-top: 100px;
+            font-size: 42px;
+            margin-left: 60px;
+            color: black;
+        }
+
+        .image12 ol li {
+            margin-left: 80px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .image13 {
+            background-image: url(Photos/Biss-1.webp);
+            margin-top: 10px;
+            width: 91%;
+            height: 215px;
+            margin-left: 70px;
+            border-radius: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image14 h1 {
+            font-family: Poppins;
+            padding-top: 50px;
+            font-size: 42px;
+            margin-left: 60px;
+            color: black;
+        }
+
+        .image14 ol li {
+            margin-left: 90px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .image15 {
+            background-image: url(Photos/Biss-2.webp);
+            width: 100%;
+            margin-top: 50px;
+            height: 215px;
+            padding: 100px;
+            border-radius: 20px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image16 h1 {
+            font-family: Poppins;
+            font-size: 42px;
+            margin-left: 60px;
+            margin-top: 50px;
+            color: black;
+        }
+
+        .image16 ol li {
+            margin-left: 90px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+
+        @media(max-width:768px) {
+            .image11 {
+                background-size: cover;
+                height: 200px;
+
             }
 
-            .gradient-text {
-                font-size: 32px;
-                margin: 10px 0;
+            .image11 h1 {
+                font-family: Oxanium;
+                padding-top: 60px;
+                font-size: 21px;
+                margin-left: 50px;
             }
 
-            .intro-text {
-                font-size: 18px;
-                width: 90%;
-                margin: 10px auto;
-                text-align: center;
+            .image11 span {
+                font-family: Inter;
+                font-size: 11px;
+                margin-left: 50px;
                 padding: 10px;
+                background-color: #919090;
+                border-radius: 20px;
+
             }
 
-            .overview-container {
-                flex-direction: column;
-                text-align: center;
+            .image12 {
+                background-size: cover;
             }
 
-            .overview-text,
-            .overview-image {
+            .image12 h1 {
+                font-family: Poppins;
+                padding-top: 100px;
+                font-size: 22px;
+                margin-left: 60px;
+                color: black;
+            }
+
+            .image12 ol li {
+                margin-left: 60px;
+                font-family: Poppins;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+
+            .image13 {
+                background-image: url(Photos/Biss-1.webp);
+                margin-top: 110px;
                 width: 100%;
-                margin: 10px 0;
-                text-align: center;
+                height: 80px;
+                margin-left: 23px;
+                border-radius: 20px;
+
+                background-size: cover;
+                background-repeat: no-repeat;
             }
 
-            .overview-image img {
-                width: 90%;
-                height: auto;
-                border-radius: 10px;
+            .image14 h1 {
+                font-family: Poppins;
+                padding-top: 50px;
+                font-size: 22px;
+                margin-left: 60px;
+                color: black;
             }
 
-            .services ol {
-                padding-left: 20px;
+            .image14 ol li {
+                margin-left: 60px;
+                font-family: Poppins;
+                font-size: 20px;
+                margin-top: 10px;
             }
+
+            .image15 {
+                background-image: url(Photos/Biss-2.webp);
+                width: 95%;
+                margin-top: 50px;
+                height: 115px;
+                margin-left: 20px;
+                border-radius: 20px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .image16 h1 {
+            font-family: Poppins;
+            font-size: 22px;
+            margin-left: 60px;
+            margin-top: 50px;
+            color: black;
         }
-        @media(max-width:768px){
-            .telcom-h3text{
-                h3{
-                    text-align: justify;
-                    font-size: 20px;
-                  
-                }
-            }
+
+        .image16 ol li {
+            margin-left: 60px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
         }
     </style>
-   
 </head>
 
 
-<body>
+<body  style="overflow-x: hidden ; width: 100%;">
+
     <!-- Navbar starts here  -->
 
 
 
     <nav class="navbar  navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-            <a class="pt-3 pb-3 " href="index.html"><img  width="100px" height="100px"
-                    src="Photo/MPT.webp" alt=""></a>
+            <a class="pt-3 pb-3 " href="index.html"><img width="100px" height="100px" src="Photo/MPT.webp" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -136,7 +306,8 @@
                                     <li><a class="dropdown-item" href="Automative.html">Automotive</a></li>
                                     <li><a class="dropdown-item" href="#">Higher Education and Research</a></li>
                                     <li><a class="dropdown-item" href="#">Insurance</a></li>
-                                    <li><a class="dropdown-item" href="Telecom.html">Telecom, Media & Technology</a></li>
+                                    <li><a class="dropdown-item" href="Telecom.html">Telecom, Media & Technology</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">Travel, Transportation & Logistics</a></li>
                                 </div>
                                 <div class="col-md-6">
@@ -224,7 +395,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
-                   
+
                     <!-- <img class="bg-dark" width="50px" height="50px" src="Photo/phone-alt.webp" alt=""> -->
                     <li class="nav-item"><a class="nav-link" href="#">+9886366450</a></li>
                 </ul>
@@ -233,127 +404,141 @@
     </nav>
     <!-- Navbar ends here  -->
 
-    <div class="container-fluid py-5 "
-        style="background-image: url(images/telecomm/92.webp); background-size: cover;height: 450px; margin-top: 150px;">
-        <h1 class="gradient-text mt-5 pt-5 mx-4">TELECOM, MEDIA & TECH</h1>
-        <div>
-            <p class=" text-box">Navigate a dynamic, disrupted global landscape by <br> modernizing and transforming
-                your manufacturing enterprise.</p>
-        </div>
-    </div>
+    <div class="container-fluid" style="margin-top: 150px;">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 image11">
+                <div>
+                    <h1><b>BUSINESS PROCESSING SERVICES</b></h1>
 
-    <div class="row shadow-lg pt-"
-        style="box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.24); background-color: rgb(78, 76, 76); height: 60px;">
-        <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <p class="text-white small " style="font-family: Poppins;">Overview</p>
-            <img class="mx-1" src="images/Financialservice/arrow-alt-circle-down.webp" alt=""
-                style="margin-top: -14px;">
-        </div>
-
-        <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
-            <p class="text-white small" style="font-family: Poppins;">Our Services</p>
-            <img class="mx-1" src="images/Financialservice/arrow-alt-circle-down.webp" alt=""
-                style="margin-top: -14px;">
-        </div>
-    </div>
-
-<div class="telcom-h3text" style=" background: linear-gradient(to top,  #FFFFFF, #0000,);">
-    <div class="container-fluid my-5 pb-5" >
-        <div class="row m-4 overview-container align-items-center">
-            <div class="col-md-7 overview-text">
-                <div class=" mx-5 ">
-                    <h1 class="fw-bold mb-5" >Media Industry Overview</h1>
-                    <h3>The telecom industry provides communication services, including voice, data, and video, through
-                        various networks, such as wireless, wireline, and satellite.</h3>
+                    <span>MPT provide a wide range of BUSINESS PROCESSING SERVICES</span>
                 </div>
             </div>
-            <div class="col-md-5 overview-image ">
-                <img src="images/telecomm/93.webp" alt="Telecom" class="img-fluid " style="border-radius: 25px;">
-            </div>
         </div>
     </div>
+    <!-- end header Part -->
 
-    <div class="container-fluid my-5 pb-5" >
-        <div class="row m-4 overview-container align-items-center">
-            <div class="col-md-7 overview-text">
-                <div class=" mx-5 ">
-                    <h1 class="fw-bold mb-5 ">Telecom Industry Overview</h1>
-                    <h3 class="">The media industry creates, produces, and distributes content, including news, entertainment,
-                        and education, through various channels, such as television, radio, print, and digital media.
-                    </h3>
+    <div class="container-fluid "  style=" box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.24); background-color: rgb(78, 76, 76); height: 60px; width: 101%;">
+        <div class="row shadow-lg"
+       >
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 service-bar">
+                    <p class="service-text">Our Service</p>
+                    <!-- Image Icon -->
+                    <img src="Photos/arrow-alt-circle-down.webp" alt="Down Arrow Icon" class="service-icon">
                 </div>
             </div>
-            <div class="col-md-5 overview-image text-center">
-                <img src="images/telecomm/94.webp" alt="Telecom" class="img-fluid " style="border-radius: 25px;">
+        </div>
+
+
+    </div>
+       </div>
+
+    <!--  start devel-servese -->
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 image12 mb-4">
+            <div>
+                <h1><b>Back-Office Services</b>
+                </h1>
+                <ol>
+                    <li>Data Entry: Accurate and efficient data entry services for various industries.
+
+                    </li>
+                    <li>Data Processing: Processing of large datasets for analysis, reporting, and decision-making.
+
+                    </li>
+                    <li>Document Management: Secure storage, retrieval, and management of electronic documents.
+
+                    </li>
+                    <li>Bookkeeping and Accounting: Financial record-keeping, invoicing, and accounting services.
+                    </li>
+                </ol>
+
             </div>
         </div>
     </div>
-
-   
-
-    <div class="container-fluid my-5 pb-5" >
-        <div class="row m-4 overview-container align-items-center">
-            <div class="col-md-7 overview-text">
-                <div class=" mx-5 ">
-                    <h1 class="fw-bold mb-5">Technology Industry Overview</h1>
-                    <h3>The media industry creates, produces, and distributes content, including news, entertainment,
-                        and education, through various channels, such as television, radio, print, and digital media.
-                    </h3>
-                </div>
-            </div>
-            <div class="col-md-5 overview-image text-center">
-                <img src="images/telecomm/95.webp" alt="Telecom" class="img-fluid " style="border-radius: 25px;">
-            </div>
-        </div>
-    </div>
+    <!-- start img business partner -->
 
     <div class="container">
-        <div class="col-12 ">
-            <h1 class="fw-bold mb-4">Services</h1>
-            <h4 class="fs-2 mb-4 mx-2">MPT play a vital role in supporting the TMT industry by providing a range of
-                services, including:</h4>
-            <ol class="fs-5">
-                <li>Network Management: Software solutions for managing telecom networks, including network planning,
-                    optimization, and security.</li>
-                <li>Digital Transformation: Services that help TMT companies transform their operations, including cloud
-                    migration, data analytics, and artificial intelligence.</li>
-                <li>Cybersecurity: Solutions that protect TMT companies from cyber threats, including network security,
-                    endpoint security, and incident response.</li>
-                <li>Data Analytics: Services that help TMT companies analyze and interpret large datasets, including
-                    predictive analytics and business intelligence.</li>
-                <li>Cloud Computing: Cloud-based infrastructure, platforms, and software that support TMT operations,
-                    including network management, content delivery, and data analytics.</li>
-                <li>Artificial Intelligence (AI) and Machine Learning (ML): Solutions that apply AI and ML to TMT
-                    operations, including content recommendation, customer service, and network optimization.</li>
-                <li>Internet of Things (IoT): Solutions that leverage IoT data from sensors and devices to improve TMT
-                    operations, including network management, content delivery, and customer experience.</li>
-                <li>5G and Edge Computing: Solutions that support the development and deployment of 5G networks and edge
-                    computing applications, including network planning, optimization, and security.</li>
-                <li>Content Delivery Network (CDN): Solutions that optimize content delivery, including video streaming,
-                    online gaming, and software downloads.</li>
-                <li>Customer Experience Management: Solutions that help TMT companies manage customer experience,
-                    including customer service, billing, and revenue management.</li>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 ">
+                <img class="img-fluid" src="Photos/Biss-1.webp" alt="" style="border-radius: 25px;">
+                <div>
+    
+                </div>
+            </div>
+        </div>
+       </div>
+    <!-- management servecs -->
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 image14">
+            <div>
+                <h1 ><b>Customer-Facing Services</b></h1>
+                <ol>
+                    <li>Customer Service: Multi-channel customer support via phone, email, chat, and social media.
+                    </li>
+                    <li>Technical Support: Technical assistance and troubleshooting services for software, hardware,
+                        and
+                        other products.</li>
+                    <li>Order Management: Management of customer orders, including processing, fulfillment, and
+                        returns.
+                    </li>
+                    <li>Help Desk Services: Level 1, 2, and 3 support for customers, including issue resolution and
+                        escalation</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- optimized img -->
+   <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 ">
+            <img class="img-fluid" src="Photos/Biss-2.webp" alt="" style="border-radius: 25px;">
+            <div>
+
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+   <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 image16">
+            <h1>
+                <b>Human Resources Services</b>
+            </h1>
+            <ol >
+                <li>Payroll Processing: Accurate and timely payroll processing, including tax compliance and
+                    benefits
+                    administration.</li>
+                <li>Recruitment Process Outsourcing: End-to-end recruitment services, including sourcing, screening,
+                    and
+                    onboarding.</li>
+                <li>Benefits Administration: Managing employee benefits like health insurance, retirement plans, and
+                    perks.
+                </li>
+                <li>HR Analytics: Data-driven insights and reporting to inform HR decision-making.</li>
+
             </ol>
         </div>
     </div>
-</div>
+   </div>
 
-  
-
-  <div class="container mt-5 mb-5">
-    <div class="row" style="margin-top: 50px p-4;">
-        <div style="border-radius: 25px;" class=" col-md-6 col-sm-6 col-12 mb-3 d-flex justify-content-center align-items-center">
-            <img src="images/telecomm/97.webp" class="img-fluid" alt="" height="600px" width="500px"
-            style="border-radius: 25px;">
-        </div>
-        <div class=" col-md-6 col-sm-6 col-12 mb-3  d-flex justify-content-center align-items-center" >
-            <img   src="images/telecomm/98.webp" class="img-fluid" alt="" height="600px" width="500px"
-               style="border-radius: 25px;">
+    <!-- last img -->
+    <div class="container">
+        <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 image17">
+        <img src="Photos/Biis-3.webp" alt="" width="90%"
+            style="margin-left: 50px; border-radius: 20px; margin-top: 20px;">
+    </div>
         </div>
     </div>
-  </div>
-   
- 
+
+
+
+
     <!-- footer section starts here  -->
 
     <footer class="bg-light py-4 mt-3 shadow-sm">
