@@ -53,74 +53,425 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* body{
-            box-sizing: border-box;
-            width: 100%;
-            max-width: 100%;
-            overflow-x: hidden;
-        } */
-         .image-section img {
-          border-radius: 10px; /* Rounded corners */
-          max-width: 100%; /* Responsive */
-          height: auto; /* Maintain aspect ratio */
+        .service-bar {
+            background-color: rgb(78, 76, 76);
+            height: 60px;
+            display: flex;
+            align-items: center;
+            box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.24);
         }
-        .heading-text {
-          font-family: 'Arial', sans-serif;
-          /* font-weight: bold; */
-        }
-        .content-text {
-          font-size: 1.1rem;
-          line-height: 1.8;
-        }
-        /* -------------- */
-        .container {
-                padding-top: 20px;
-            }
-    
-            .header-text {
-                font-size: 24px;
-                /* font-weight: bold; */
-                margin-bottom: 20px;
-                font-family: 'Arial', sans-serif;
-            }
-    
-            .image-container {
-                display: flex;
-            }
-    
-            .image {
-                width: 300px;
-                height: 300px;
-                margin-right: 20px;
-            }
-    
-            .content {
-                line-height: 1.5;
-                margin-bottom: 20px;
-            }
-    
-            .highlight {
-                font-weight: bold;
-            } 
-    
-    
-    /* img 2 left css */
-    .custom-heading {
-                /* font-weight: bold; */
-                /* text-align: center; */
-                margin-bottom: 30px;
-            }
-             .custom-text {
-                text-align: justify;
-            }
-            .image-container img {
-                width: 80%;
-                height: 450px;
-                border-radius: 10px;
-            }
-    
-      </style>
 
+        .service-text {
+            color: white;
+            margin-left: 40px;
+            margin-right: 10px;
+            margin-bottom: 2px;
+        }
+
+        .service-icon {
+            width: 15px;
+            height: 15px;
+            margin-bottom: -3px;
+        }
+
+        /* Network Management colour */
+        .gradient-text {
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(to right,
+                    hsl(200, 13%, 95%),
+                    #f7f8f8,
+                    #232729,
+                    #ADADAD,
+                    #000000,
+                    #000000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .image101 {
+            background-image: url(Photos/125.webp);
+            width: 100%;
+            height: 440px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image101 h1 {
+            font-family: Oxanium;
+            padding-top: 170px;
+            font-size: 49px;
+            margin-left: 70px;
+        }
+
+        .image101 span {
+            font-family: Inter;
+            font-size: 18px;
+            margin-left: 60px;
+            padding: 10px;
+            background-color: #7DAEC1;
+            border-radius: 20px;
+        }
+
+        .image102 {
+            background-image: url(Photos/Net-Frame\ 29.jpg);
+            width: 100%;
+            height: 415px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image102 h1 {
+            font-family: Poppins;
+            padding-top: 100px;
+            font-size: 42px;
+            margin-left: 120px;
+            color: black;
+        }
+
+        .image102 ol li {
+            margin-left: 120px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .image103 {
+            background-image: url(Photos/Net-image1.webp);
+            margin-top: -200px;
+            width: 90%;
+            height: 415px;
+            margin-left: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image104 h1 {
+            font-family: Poppins;
+            padding-top: 20px;
+            font-size: 42px;
+            margin-left: 60px;
+            color: black;
+        }
+
+        .image104 ol li {
+            margin-left: 70px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        
+
+        .image105 h1 {
+            font-family: Poppins;
+            font-size: 42px;
+            margin-left: 60px;
+          margin-top: -100px;
+            color: black;
+        }
+
+        .image105 ol li {
+            margin-left: 70px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .image106 {
+            background-image: url(Photos/Net-image3.webp);
+            width: 90%;
+            margin-top: 100px;
+            height: 435px;
+            margin-left: 80px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image107 h1 {
+            font-family: Poppins;
+            font-size: 42px;
+            margin-left: 60px;
+            margin-top: -50px;
+            color: black;
+        }
+
+        .image107 ol li {
+            margin-left: 70px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .image108 {
+            background-image: url(Photos/image7.webp);
+            width: 90%;
+            margin-top: -90px;
+            height: 435px;
+            margin-left: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image109 h1 {
+            font-family: Poppins;
+            font-size: 42px;
+            margin-left: 60px;
+            margin-top: -50px;
+            color: black;
+        }
+
+        .image109 ol li {
+            margin-left: 70px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+
+        }
+
+        .image110 {
+            background-image: url(Photos/Net-image4.webp);
+            width: 90%;
+            margin-top: -70px;
+            height: 435px;
+            margin-left: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image111 h1 {
+            font-family: Poppins;
+            font-size: 42px;
+            margin-left: 60px;
+            margin-top: -50px;
+            color: black;
+        }
+
+        .image111 ol li {
+            margin-left: 70px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+
+        }
+
+        .image112 {
+            background-image: url(Photos/Net-image5.webp);
+            width: 90%;
+            margin-top: -90px;
+            height: 435px;
+            margin-left: 60px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .image113 h1 {
+            font-family: Poppins;
+            font-size: 42px;
+            margin-left: 60px;
+            margin-top: -50px;
+            color: black;
+        }
+
+        .image113 ol li {
+            margin-left: 70px;
+            font-family: Poppins;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .margin-top-image{
+            margin-top: -150px;
+        }
+
+        @media(max-width:768px) {
+            .image101 {
+                background-size: cover;
+                height: 175px;
+
+            }
+
+            .image101 h1 {
+                font-family: Oxanium;
+                padding-top: 70px;
+                font-size: 22px;
+                margin-left: 30px;
+            }
+
+            .image101 span {
+                font-family: Inter;
+                font-size: 13px;
+                margin-left: 30px;
+                padding: 10px;
+                background-color: #7DAEC1;
+                border-radius: 20px;
+            }
+
+
+            .image102 h1 {
+                font-family: Poppins;
+                padding-top: 100px;
+                font-size: 22px;
+                margin-left: 40px;
+                color: black;
+            }
+
+            .image102 ol li {
+                margin-left: 40px;
+                font-family: Poppins;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+            .image103 {
+                background-image: url(Photos/Net-image1.webp);
+                margin-top: -150px;
+                width: 109%;
+                height: 215px;
+                margin-left: -10px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .image104 h1 {
+                font-family: Poppins;
+                padding-top: 20px;
+                font-size: 22px;
+                margin-left: 40px;
+                color: black;
+            }
+
+            .image104 ol li {
+                margin-left: 40px;
+                font-family: Poppins;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+          
+
+            .image105 h1 {
+                font-family: Poppins;
+                font-size: 22px;
+                margin-left: 40px;
+                margin-top: 170px;
+                color: black;
+            }
+
+            .image105 ol li {
+                margin-left: 40px;
+                font-family: Poppins;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+            .image106 {
+                background-image: url(Photos/Net-image3.webp);
+                width: 100%;
+                margin-top: 170px;
+                height: 235px;
+                margin-left: 0px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .image107 h1 {
+                font-family: Poppins;
+                font-size: 22px;
+                margin-left: 40px;
+                margin-top: -40px;
+                color: black;
+            }
+
+            .image107 ol li {
+                margin-left: 40px;
+                font-family: Poppins;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+            .image108 {
+                background-image: url(Photos/image7.webp);
+                width: 100%;
+                margin-top: -40px;
+                height: 235px;
+                margin-left: -10px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .image109 h1 {
+                font-family: Poppins;
+                font-size: 22px;
+                margin-left: 40px;
+                margin-top: -50px;
+                color: black;
+            }
+
+            .image109 ol li {
+                margin-left: 40px;
+                font-family: Poppins;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+            .image110 {
+                background-image: url(Photos/Net-image4.webp);
+                width: 100%;
+                margin-top: -20px;
+                height: 235px;
+                margin-left: -10px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .image111 h1 {
+                font-family: Poppins;
+                font-size: 22px;
+                margin-left: 40px;
+                margin-top: -20px;
+                color: black;
+            }
+
+            .image111 ol li {
+                margin-left: 40px;
+                font-family: Poppins;
+                font-size: 15px;
+                margin-top: 20px;
+
+            }
+
+            .image112 {
+                background-image: url(Photos/Net-image5.webp);
+                width: 100%;
+                margin-top: -60px;
+                height: 235px;
+                margin-left: -10px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .image113 h1 {
+                font-family: Poppins;
+                font-size: 22px;
+                margin-left: 40px;
+                margin-top: -10px;
+                color: black;
+            }
+
+            .image113 ol li {
+                margin-left: 40px;
+                font-family: Poppins;
+                font-size: 15px;
+                margin-top: 20px;
+            }
+
+            .image114 img {
+                margin-top: -90px;
+            }
+
+        }
+    </style>
 </head>
 
 
@@ -248,115 +599,260 @@
     </nav>
     <!-- Navbar ends here  -->
 
-  
-    
+    <div class="container-fluid" style="margin-top: 150px;">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 image101">
+                <div>
+                    <div>
+                        <h1 class="gradient-text" style=" ">
+                            <b>Network Management</b>
+                        </h1>
 
-        <div  
-        style="background-image: url(Photos/25.webp); width: 100%; height: 415px; background-size: cover; background-repeat: no-repeat; border-radius:  0px 0px 12px 12px; margin-top: 150px;">
-           <div >
-            <h1 style=" font-family: Oxanium; padding-top: 100px; font-size: 52px; margin-left: 30px;"><b>Generative AI</b></h1>
-           </div>
-            <p style="font-family: Inter; font-size: 18px; margin-left: 30px;" >MPT's Generative Al strategy is designed to help businesses <br>
-              navigate the complex landscape of Generative Al by offering <br>
-              a comprehensive approach.</p>
-        </div>
-    
-    <!-- lft side 1 -->
-    <div class="container my-5">
-        <div class="row align-items-center">    
-          <!-- Left Side: Text -->
-          <div class="col-md-7">
-            <h3 class="heading-text mb-3" style="font-family: Oxanium; font-size: 35px; padding-bottom: 100px;">Defining the Generative AI Journey:</h3>
-            <p class="content-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px; padding-bottom: 150px;">
-              It is a critical first step for any organization aiming to harness the power of Generative AI.
-              This journey encompasses a series of strategic, technological, and operational milestones
-              that allow a company to effectively implement and scale AI solutions. Below are the key
-              phases involved in defining the Generative AI journey:
-            </p>
-          </div>
-      
-          <!-- Right Side: Image 1-->
-          <div class="col-md-5 image-section text-center">
-            <img style="padding: 30px; border-radius: 40px; " src="Photos/26.webp" alt="">
-          </div>
-        </div>
-      </div>
-    
-      
-    <div class="container mt-5">
-      <h2 class="custom-heading" style="font-family: Oxanium; font-size: 35px; margin-bottom: 30px; margin-top: -100px;">Organizational Transformation through Generative AI:</h2>
-      <div class="row align-items-center">
-          <!-- Image Section -->
-          <div class="col-md-6 image-container">
-              <img style="padding: 30px; border-radius: 40px;  " src="Photos/30.webp" alt="Generative AI">
-          </div>
-          <!-- Text Section -->
-          <div class="col-md-6">
-              <p class="custom-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px;">
-                  Implementing Generative AI (GenAI) technologies doesn’t just involve adopting 
-                  new tools and techniques; it requires a holistic transformation of how an organization
-                   operates, thinks, and delivers value. This transformation spans several critical areas: culture,
-                    processes, structures, and technology. The key to success lies in seamlessly integrating AI into the organization
-                   while aligning it with broader strategic objectives. Here's how an organization can transform by leveraging Generative AI.
-              </p>
-          </div>
-      </div>
-    </div>
-    
-    <h3 style="font-family: Oxanium; font-size: 35px; margin-left: 70px; margin-top: 20px;">Developing the Generative AI Technology Stack:</h3>
-    <!-- lest side 1 -->
-    <div class="container my-5">
-        <div class="row align-items-center">
-          <!-- Left Side: Text -->
-          <div class="col-md-7">
-            <!-- <h3 class="heading-text mb-3" style="font-family: Oxanium; font-size: 35px; margin-top: -40px;">Developing the Generative AI Technology Stack:</h3> -->
-            <p class="content-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px; ">
-                Building a robust Generative Al (GenAl) technology stack is critical to ensuring that an organization can effectively implement,
-                scale, and maintain Al-driven solutions. A well-defined technology stack not only supports the deployment of Al models but also 
-                ensures seamless integration with existing systems and scalability for future growth. Below are the core components and 
-                considerations for developing a comprehensive GenAl technology stack
-            </p>
-          </div>
-      
-          <!-- Right Side: Image 1-->
-          <div class="col-md-5 image-section text-center">
-            <img style="padding: 30px; border-radius: 40px;" src="Photos/28.webp" alt="">
-          </div>
-        </div>
-      </div>
-    
-        <!-- left Side image 02-->
-        <div class="container">
-            <h3 class="header-text"style="font-family: Oxanium; font-size: 35px;">Leveraging Industry-Specific Knowledge with Generative AI</h3>
-        
-            <div class="image-container">
-                <img  style="margin-top: 40px; padding: 30px; border-radius: 40px;" src="Photos/29.webp" alt="Generative AI" class="image"> 
-        
-                <div class="content">
-                    <p style="font-family: Poppins; font-size: 25px; text-align: justify; padding-left: 50px; margin-top: 50px;">Generative Al (GenAI) can transform a wide variety of industries by delivering tailored solutions 
-                       that address unique challenges, optimize processes, and unlock new opportunities. By leveraging industry-specific knowledge, 
-                       businesses can enhance the impact of Al technologies, making them more relevant and actionable. Whether for healthcare, 
-                       finance, manufacturing, retail, or other sectors, understanding the intricacies of the industry is crucial to building Al solutions that deliver value.</p>
+                        <span>Here are some network management services provided by MPT</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-    
-    <!-- live Project -->
-    <div  class="container my-5" style="background-image: url(Photos/31.webp); width: 100%; height: 344px; border-radius: 20px;">
-        <h3 style="text-decoration: underline; "><b style="font-family:Oxanium; margin-left: 20px;">Live Project Program</b></h3>
-        <ul style="font-size: 20px; font-family: Poppins;">
-          <li>By AI/ML Industry Experts</li>
-          <li>Duration - 24 Weeks Program</li>
-          <li>Limited Slots</li>
-        </ul>
-        <button style="margin-left: 85%; margin-top: 80px; border-radius: 30px;  height: 60px; width: 160px; border: none; box-shadow: inset 2px 2px 2px 2px gray;"><b>Enroll Now</b></button>
-      </div>
-    
-   
-    
-    
-      
+            <!-- end header Part -->
+
+            <div class="container-fluid "
+                style=" box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.24); background-color: rgb(78, 76, 76); height: 60px; width: 101%;">
+                <div class="row shadow-lg">
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 service-bar">
+                                <p class="service-text">Our Service</p>
+                                <!-- Image Icon -->
+                                <img src="Photos/arrow-alt-circle-down.webp" alt="Down Arrow Icon" class="service-icon">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <!--  start devel-servese -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 image102">
+                        <div>
+                            <h1>
+                                <b>Network Monitoring</b>
+                            </h1>
+                            <ol>
+                                <li>Real-time monitoring: Continuous monitoring of network performance, availability,
+                                    and
+                                    security. </li>
+                                <li>Alerts and notifications: Automated alerts and notifications for network issues,
+                                    enabling
+                                    swift action.
+
+                                </li>
+
+                            </ol>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- start img business partner -->
+            <div class="container margin-top-image"  >
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 ">
+                        <img class="img-fluid" src="Photos/Net-image1.webp" alt="" style="border-radius: 25px;">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Network servecs -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 image104">
+                        <div>
+                            <h1>
+                                <b>Network Maintenance</b>
+                            </h1>
+                            <ol>
+                                <li>Software updates and patches: Regular updates and patches for network devices and
+                                    software.
+                                </li>
+                                <li>Configuration management: Management of network device configurations to ensure
+                                    consistency
+                                    and compliance.</li>
+                                <li>Backup and disaster recovery: Regular backups and disaster recovery planning to
+                                    minimize
+                                    downtime.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Network Security img -->
+
+            <div class="container" style="margin-top: -100px;">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 ">
+                        <img class="img-fluid" src="Photos/Net-image2.webp" alt="" style="border-radius: 25px;">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 image105">
+                        <div>
+
+                        </div>
+                        <h1><b>Network Security</b></h1>
+                        <ol>
+                            <li>Functional Testing: Verifying that applications function as intended.</li>
+                            <li>Intrusion detection and prevention: Monitoring for potential security threats and
+                                prevention of
+                                unauthorized access.</li>
+                            <li>Vulnerability management: Identification and remediation of network vulnerabilities.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Network Performance Optimization img -->
+            <div class="container" style="margin-top: -80px;">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 ">
+                        <img class="img-fluid" src="Photos/Net-image3.webp" alt="" style="border-radius: 25px;">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 image107">
+
+                        <h1>
+                            <b>Network Performance Optimization</b>
+                        </h1>
+                        <ol>
+                            <li>Network traffic analysis: Analysis of network traffic to identify bottlenecks and
+                                optimize
+                                performance.
+
+                            </li>
+                            <li>Quality of Service (QoS): Configuration and management of QoS policies to prioritize
+                                critical
+                                applications.
+
+                            </li>
+                            <li>Capacity planning: Planning and provisioning of network resources to meet growing
+                                demands.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Network Troubleshooting  img -->
+            <div class="container" style="margin-top: -100px;">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 ">
+                        <img class="img-fluid" src="Photos/Image7.webp" alt="" style="border-radius: 25px;">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 image109">
+                        <h1>
+                            <b>Network Troubleshooting</b>
+                        </h1>
+                        <ol>
+                            <li>Fault detection and diagnosis: Identification and diagnosis of network issues.</li>
+                            <li>Troubleshooting and repair: Swift troubleshooting and repair of network issues to
+                                minimize
+                                downtime.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Managed Network Services img -->
+            <div class="container" style="margin-top: -50px;">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 ">
+                        <img class="img-fluid" src="Photos/Net-image4.webp" alt="" style="border-radius: 25px;">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 image111">
+                        <h1>
+                            <b>Managed Network Services</b>
+                        </h1>
+                        <ol>
+                            <li>Managed Wi-Fi: Management of Wi-Fi networks, including configuration, security, and
+                                troubleshooting.</li>
+                            <li>Managed LAN/WAN: Management of local area networks (LANs) and wide area networks
+                                (WANs).
+                            </li>
+                            <li>Managed cloud services: Management of cloud-based services, including
+                                infrastructure,
+                                platforms,
+                                and applications.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Other Services Services img -->
+            <div class="container" style="margin-top: -100px;">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 ">
+                        <img class="img-fluid" src="Photos/Net-image5.webp" alt="" style="border-radius: 25px;">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 image113">
+                        <h1>
+                            <b>Other Services</b>
+                        </h1>
+                        <ol>
+                            <li>Network design and implementation: Design and implementation of new networks or
+                                upgrades
+                                to
+                                existing networks.</li>
+                            <li>Network auditing and compliance: Auditing of networks to ensure compliance with
+                                regulatory
+                                requirements and industry standards.</li>
+                            <li>Training and support: Training and support for network administrators and end-users.
+                            </li>
+                        </ol>
+
+                        <!-- last img -->
+                        <div class="container" style="margin-top: -100px;">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 ">
+                                    <img class="img-fluid" src="Photos/Net-image6.webp" alt="" style="border-radius: 25px;">
+                                    <div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                         <!-- footer section starts here  -->
 

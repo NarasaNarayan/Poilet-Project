@@ -53,74 +53,116 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* body{
-            box-sizing: border-box;
-            width: 100%;
-            max-width: 100%;
+        body{
             overflow-x: hidden;
-        } */
-         .image-section img {
-          border-radius: 10px; /* Rounded corners */
-          max-width: 100%; /* Responsive */
-          height: auto; /* Maintain aspect ratio */
+           width: 100%;
         }
-        .heading-text {
-          font-family: 'Arial', sans-serif;
-          /* font-weight: bold; */
+        .gradient-text {
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(to right,
+                    hsl(0, 0%, 61%),
+                    #101010,
+                    #3f3e3e,
+                    #494848,
+                    #252525,
+                    #101010);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        .content-text {
-          font-size: 1.1rem;
-          line-height: 1.8;
+        .healthcare-image{
+            height: 500px;
+            width: 1500px;
         }
-        /* -------------- */
-        .container {
-                padding-top: 20px;
+
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            max-width: 520px;
+            padding-left: 10px;  
+        }
+
+        .overview-text {
+            p {
+                font-size: 42px;
+                padding: 10px;
             }
-    
-            .header-text {
-                font-size: 24px;
-                /* font-weight: bold; */
-                margin-bottom: 20px;
-                font-family: 'Arial', sans-serif;
-            }
-    
-            .image-container {
-                display: flex;
-            }
-    
+        }
+        .overview h3{
+            font-size: 18px;
+        }
+
+        .image {
+            margin-left: 60px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+        .service{
+            font-size: 42px;
+        }
+
+        @media (max-width: 768px) {
             .image {
-                width: 300px;
-                height: 300px;
-                margin-right: 20px;
-            }
-    
-            .content {
-                line-height: 1.5;
-                margin-bottom: 20px;
-            }
-    
-            .highlight {
-                font-weight: bold;
-            } 
-    
-    
-    /* img 2 left css */
-    .custom-heading {
-                /* font-weight: bold; */
-                /* text-align: center; */
-                margin-bottom: 30px;
-            }
-             .custom-text {
-                text-align: justify;
-            }
-            .image-container img {
-                width: 80%;
-                height: 450px;
                 border-radius: 10px;
             }
-    
-      </style>
+            .healthcare-image{
+                width: 500px;
+                height: 400px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-items: center;
+            }
+            .text-box {
+              background-color: rgba(255, 255, 255, 0.3);
+              border-radius: 20px;
+              max-width: 375px;
+              padding-left: 10px;
+              font-size: 12px;
+              margin-top: -60px;
+              margin-left: 20px;
+            }
+            .gradient-text {
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 50px;
+            background: linear-gradient(to right,
+                    hsl(0, 0%, 61%),
+                    #101010,
+                    #3f3e3e,
+                    #494848,
+                    #252525,
+                    #101010);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .service {
+            padding-top: 50px;
+            font-size: 30px;
+        }
+        .service h4{
+            font-size: 12px;
+        }
+        }
 
+        .service h1{
+            padding-top: 100px;
+            font-size: 42px;
+        }
+        .service h4{
+            font-size: 26px;
+        }
+        .service ol{
+            font-size: 23px;
+        }
+        .overview{
+            background-image:url(images/bgframe.webp);
+            background-repeat: no-repeat;
+        }
+
+    </style>
 </head>
 
 
@@ -248,115 +290,92 @@
     </nav>
     <!-- Navbar ends here  -->
 
-  
-    
-
-        <div  
-        style="background-image: url(Photos/25.webp); width: 100%; height: 415px; background-size: cover; background-repeat: no-repeat; border-radius:  0px 0px 12px 12px; margin-top: 150px;">
-           <div >
-            <h1 style=" font-family: Oxanium; padding-top: 100px; font-size: 52px; margin-left: 30px;"><b>Generative AI</b></h1>
-           </div>
-            <p style="font-family: Inter; font-size: 18px; margin-left: 30px;" >MPT's Generative Al strategy is designed to help businesses <br>
-              navigate the complex landscape of Generative Al by offering <br>
-              a comprehensive approach.</p>
+    <div class="container-fluid healthcare-image"
+        style="background-image: url(images/Insurance/78.webp); background-size: cover; background-position: center;margin-top: 150px; ">
+        <img src="" alt="" class="img-fluid"
+            style=" padding-top: 100px; margin-left: 15px; width: 400px; margin-top:60px;">
+        <h1 class="gradient-text"
+            style=" font-weight: bold;  margin-left: 15px; font-family: Oxanium;">
+           Insurance </h1>
+        <div class="text-box ">
+            <p>MPT provide digital business transformation to anticipate and exceed changing customer needs in a complex and evolving insurance industry.</p>
         </div>
-    
-    <!-- lft side 1 -->
-    <div class="container my-5">
-        <div class="row align-items-center">    
-          <!-- Left Side: Text -->
-          <div class="col-md-7">
-            <h3 class="heading-text mb-3" style="font-family: Oxanium; font-size: 35px; padding-bottom: 100px;">Defining the Generative AI Journey:</h3>
-            <p class="content-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px; padding-bottom: 150px;">
-              It is a critical first step for any organization aiming to harness the power of Generative AI.
-              This journey encompasses a series of strategic, technological, and operational milestones
-              that allow a company to effectively implement and scale AI solutions. Below are the key
-              phases involved in defining the Generative AI journey:
-            </p>
-          </div>
-      
-          <!-- Right Side: Image 1-->
-          <div class="col-md-5 image-section text-center">
-            <img style="padding: 30px; border-radius: 40px; " src="Photos/26.webp" alt="">
-          </div>
-        </div>
-      </div>
-    
-      
-    <div class="container mt-5">
-      <h2 class="custom-heading" style="font-family: Oxanium; font-size: 35px; margin-bottom: 30px; margin-top: -100px;">Organizational Transformation through Generative AI:</h2>
-      <div class="row align-items-center">
-          <!-- Image Section -->
-          <div class="col-md-6 image-container">
-              <img style="padding: 30px; border-radius: 40px;  " src="Photos/30.webp" alt="Generative AI">
-          </div>
-          <!-- Text Section -->
-          <div class="col-md-6">
-              <p class="custom-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px;">
-                  Implementing Generative AI (GenAI) technologies doesn’t just involve adopting 
-                  new tools and techniques; it requires a holistic transformation of how an organization
-                   operates, thinks, and delivers value. This transformation spans several critical areas: culture,
-                    processes, structures, and technology. The key to success lies in seamlessly integrating AI into the organization
-                   while aligning it with broader strategic objectives. Here's how an organization can transform by leveraging Generative AI.
-              </p>
-          </div>
-      </div>
     </div>
-    
-    <h3 style="font-family: Oxanium; font-size: 35px; margin-left: 70px; margin-top: 20px;">Developing the Generative AI Technology Stack:</h3>
-    <!-- lest side 1 -->
-    <div class="container my-5">
-        <div class="row align-items-center">
-          <!-- Left Side: Text -->
-          <div class="col-md-7">
-            <!-- <h3 class="heading-text mb-3" style="font-family: Oxanium; font-size: 35px; margin-top: -40px;">Developing the Generative AI Technology Stack:</h3> -->
-            <p class="content-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px; ">
-                Building a robust Generative Al (GenAl) technology stack is critical to ensuring that an organization can effectively implement,
-                scale, and maintain Al-driven solutions. A well-defined technology stack not only supports the deployment of Al models but also 
-                ensures seamless integration with existing systems and scalability for future growth. Below are the core components and 
-                considerations for developing a comprehensive GenAl technology stack
-            </p>
-          </div>
-      
-          <!-- Right Side: Image 1-->
-          <div class="col-md-5 image-section text-center">
-            <img style="padding: 30px; border-radius: 40px;" src="Photos/28.webp" alt="">
-          </div>
+
+    <div class="row shadow-lg pt-2"
+        style="box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.24); background-color: rgb(78, 76, 76); height: 60px;">
+        <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <p class="text-white small " style="font-family: Poppins;">Overview</p>
+            <img class="mx-1" src="images/Financialservice/arrow-alt-circle-down.webp" alt=""
+                style="margin-top: -14px;">
         </div>
-      </div>
-    
-        <!-- left Side image 02-->
-        <div class="container">
-            <h3 class="header-text"style="font-family: Oxanium; font-size: 35px;">Leveraging Industry-Specific Knowledge with Generative AI</h3>
-        
-            <div class="image-container">
-                <img  style="margin-top: 40px; padding: 30px; border-radius: 40px;" src="Photos/29.webp" alt="Generative AI" class="image"> 
-        
-                <div class="content">
-                    <p style="font-family: Poppins; font-size: 25px; text-align: justify; padding-left: 50px; margin-top: 50px;">Generative Al (GenAI) can transform a wide variety of industries by delivering tailored solutions 
-                       that address unique challenges, optimize processes, and unlock new opportunities. By leveraging industry-specific knowledge, 
-                       businesses can enhance the impact of Al technologies, making them more relevant and actionable. Whether for healthcare, 
-                       finance, manufacturing, retail, or other sectors, understanding the intricacies of the industry is crucial to building Al solutions that deliver value.</p>
-                </div>
+
+        <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+            <p class="text-white small" style="font-family: Poppins;">Our Services</p>
+            <img class="mx-1" src="images/Financialservice/arrow-alt-circle-down.webp" alt=""
+                style="margin-top: -14px;">
+        </div>
+    </div>
+
+    <div class="overview" style="background-image:url(images/bgframe.webp); padding-right: 50px; padding-top: 50px;">
+        <h1 style="margin-top: 30px; font-weight: bolder; margin-left: 70px;  font-family: poppins;">
+            Overview</h1>
+        <h3 style="margin-left: 70px; margin-top: 20px; font-size: 26px; font-family: poppins; font-weight: normal; " ;>
+            The insurance industry provides financial protection to individuals and organizations against various types of risks, including:</h3>
+        <ol style="margin-left: 70px; font-size: 23px; margin-top: 30px; font-family: poppins; font-weight: lighter;" ;>
+            <li>Life Insurance: Provides financial protection to policyholders' beneficiaries in the event of death.</li>
+            <li>Health Insurance: Covers medical expenses s for policyholders.</li>
+            <li>Property and Casualty Insurance: Covers damages to property and liability for injuries or damage to others.
+          </li>          
+            <li>Reinsurance: Provides insurance to insurance companies to manage their risk</li>  
+        </ol>
+    </div>
+
+    <div class="image">
+        <img src="images/Insurance/79.webp" class="img-fluid rounded" alt="" width="90%">
+    </div>
+
+    <div class="col-12 fs-5 service" style="padding-top: 10px; margin-top: -110px;">
+        <h1 class=" "
+            style="margin-top: 35px; font-weight: bolder; margin-left: 70px;  font-family: poppins;">
+            Services</h1>
+        <h4
+            style="margin-left: 70px; margin-top: 20px; font-weight: 600px; font-family: poppins; font-weight: normal;">
+            MPT play a vital role in supporting the insurance industry by providing a range of services, including:
+        </h4>
+        <ol
+            style="margin-left: 70px; font-size: 25px; padding-right: 50px; margin-top: 20px;  font-family: poppins; font-weight: lighter; ">
+            <li>Policy Administration Systems: Software solutions for managing policy issuance, renewal, and claims processing.
+            </li>
+            <li>Claims Management Systems: Software solutions for managing claims processing, including fraud detection and prevention.
+            </li>
+            <li>Risk Management Systems: Software solutions for assessing and managing risk, including predictive analytics and data visualization.
+            </li>
+            <li>Data Analytics: Services that help insurance companies analyze and interpret large datasets, including policyholder data, claims data, and market trends.</li>
+            <li>Digital Transformation: Services that help insurance companies transform their operations, including online policy issuance, claims processing, and customer engagement
+            </li>
+            <li>Cybersecurity: Solutions that protect insurance companies from cyber threats, including network security, endpoint security, and incident response.
+            </li>
+            <li>Cloud Services: Cloud-based infrastructure, platforms, and software that support insurance operations, including policy administration, claims management, and data analytics.</li>
+            <li>Artificial Intelligence (AI) and Machine Learning (ML): Services that apply Al and ML to various insurance applications, including claims processing, risk assessment, and customer engagement.
+            </li>
+            <li>Internet of Things (IoT): Solutions that leverage lot data from sensors and devices to improve risk assessment, claims processing, and customer engagement
+            </li>
+            <li>Blockchain: Solutions that leverage blockchain technology to improve data security, transparency, and efficiency in insurance operations.</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-6 col-12 mb-4 px-5">
+                <img src="images/Insurance/80.webp" class="img-fluid rounded" alt="" style="border-radius: 20px;">
+            </div>
+            <div class="col-md-6 col-12 mb-4 px-5">
+                <img src="images/Insurance/81.webp" class="img-fluid rounded" alt="" style="border-radius: 20px;">
             </div>
         </div>
-    
-    
-    <!-- live Project -->
-    <div  class="container my-5" style="background-image: url(Photos/31.webp); width: 100%; height: 344px; border-radius: 20px;">
-        <h3 style="text-decoration: underline; "><b style="font-family:Oxanium; margin-left: 20px;">Live Project Program</b></h3>
-        <ul style="font-size: 20px; font-family: Poppins;">
-          <li>By AI/ML Industry Experts</li>
-          <li>Duration - 24 Weeks Program</li>
-          <li>Limited Slots</li>
-        </ul>
-        <button style="margin-left: 85%; margin-top: 80px; border-radius: 30px;  height: 60px; width: 160px; border: none; box-shadow: inset 2px 2px 2px 2px gray;"><b>Enroll Now</b></button>
-      </div>
-    
-   
-    
-    
-      
+    </div>
+
 
                         <!-- footer section starts here  -->
 

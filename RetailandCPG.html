@@ -53,74 +53,84 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* body{
-            box-sizing: border-box;
-            width: 100%;
-            max-width: 100%;
+        body {
             overflow-x: hidden;
-        } */
-         .image-section img {
-          border-radius: 10px; /* Rounded corners */
-          max-width: 100%; /* Responsive */
-          height: auto; /* Maintain aspect ratio */
         }
-        .heading-text {
-          font-family: 'Arial', sans-serif;
-          /* font-weight: bold; */
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            max-width: 600px;
+            text-align: center;
         }
-        .content-text {
-          font-size: 1.1rem;
-          line-height: 1.8;
+        .hero-section  h1 {
+            font-family: 'Oxanium', sans-serif;
+            font-size: 52px;
+            font-weight: bold;
+           margin-left: 0 !important;
+            margin-top: 150px;
         }
-        /* -------------- */
-        .container {
-                padding-top: 20px;
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .IOT{
+            img{
+                margin-top: 50px;
+                
             }
-    
-            .header-text {
-                font-size: 24px;
-                /* font-weight: bold; */
-                margin-bottom: 20px;
-                font-family: 'Arial', sans-serif;
-            }
-    
-            .image-container {
-                display: flex;
-            }
-    
-            .image {
-                width: 300px;
-                height: 300px;
-                margin-right: 20px;
-            }
-    
-            .content {
-                line-height: 1.5;
-                margin-bottom: 20px;
-            }
-    
-            .highlight {
-                font-weight: bold;
-            } 
-    
-    
-    /* img 2 left css */
-    .custom-heading {
-                /* font-weight: bold; */
-                /* text-align: center; */
-                margin-bottom: 30px;
-            }
-             .custom-text {
-                text-align: justify;
-            }
-            .image-container img {
-                width: 80%;
-                height: 450px;
-                border-radius: 10px;
-            }
-    
-      </style>
+        }
 
+        @media (max-width: 768px) {
+            
+                .image-1{
+                /* height: auto; */
+                background-size: 480px 400px;
+                background-repeat: no-repeat;
+                }
+            
+            h1 {
+                font-size: 18px;
+                text-align: center;
+               
+            }
+            p {
+                font-size: 13px;
+                /* margin-bottom: 80px; */
+            }     
+            .num{
+            margin-top: -100px;
+        }
+        .IOT{
+            margin-bottom: 80px;
+        }      
+        }
+        .overview-text{
+            p{
+             font-size:13px;
+            }            
+        }
+        .nav{
+            h1{
+                margin-top: 80px;
+                margin-left: 20px;
+            }
+            ol{
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+        .image img {            
+                margin-top: 30px;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-radius: 100px;
+        }
+        .nav li{
+            font-family: poppins;
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 
@@ -249,111 +259,131 @@
     <!-- Navbar ends here  -->
 
   
+        <div class="container-fluid"
+            style="background-image: url(Photos/99.webp); opacity: 82%; background-size: cover; background-position: center; height: 500px;margin-top: 150px; ">
+            <img src="" alt="" class="img-fluid"
+                style=" padding-top: 100px; margin-left: 15px; width: 400px; margin-top:90px;">
+            <div style="background-image: url(); width: 50%; margin-left: 10px; border-radius: 20px;; ">
+                <h1 class="gradient-text"
+                    style=" font-family: Oxanium; padding-top: 10px; font-size: 49px; margin-left: 20px; color: #000;">
+                    <b>Retail & CPG</b>
+                </h1>
     
-
-        <div  
-        style="background-image: url(Photos/25.webp); width: 100%; height: 415px; background-size: cover; background-repeat: no-repeat; border-radius:  0px 0px 12px 12px; margin-top: 150px;">
-           <div >
-            <h1 style=" font-family: Oxanium; padding-top: 100px; font-size: 52px; margin-left: 30px;"><b>Generative AI</b></h1>
-           </div>
-            <p style="font-family: Inter; font-size: 18px; margin-left: 30px;" >MPT's Generative Al strategy is designed to help businesses <br>
-              navigate the complex landscape of Generative Al by offering <br>
-              a comprehensive approach.</p>
+                <p
+                    style="font-size: 20px; padding:5px; opacity: 100%; margin-left: 20px; font-family: Inter; color: #000000; background-color: rgba(231, 231, 231, 0.5); border-radius: 20px;">
+                    Navigate a dynamic, disrupted global
+                    landscape by modernizing and transforming your manufacturing enterprise.</p>
+            </div>
         </div>
     
-    <!-- lft side 1 -->
-    <div class="container my-5">
-        <div class="row align-items-center">    
-          <!-- Left Side: Text -->
-          <div class="col-md-7">
-            <h3 class="heading-text mb-3" style="font-family: Oxanium; font-size: 35px; padding-bottom: 100px;">Defining the Generative AI Journey:</h3>
-            <p class="content-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px; padding-bottom: 150px;">
-              It is a critical first step for any organization aiming to harness the power of Generative AI.
-              This journey encompasses a series of strategic, technological, and operational milestones
-              that allow a company to effectively implement and scale AI solutions. Below are the key
-              phases involved in defining the Generative AI journey:
-            </p>
-          </div>
-      
-          <!-- Right Side: Image 1-->
-          <div class="col-md-5 image-section text-center">
-            <img style="padding: 30px; border-radius: 40px; " src="Photos/26.webp" alt="">
-          </div>
+        <div class="row shadow-lg"
+            style=" box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.24); background-color: rgb(78, 76, 76); height: 60px;">
+            <div class="col-5 col-md-3 col-sm-3" style="display: flex; align-items: center;">
+                <p style="color: white; margin-left:60px; padding: 15px; font-size: 16px;">Overview</p>
+                <img src="Photos/arrow-alt-circle-down.webp" alt="" style="margin-top: -12px; height: 15px; width: 15px;">
+            </div>
+    
+            <div class="col-5 col-md-3" style="display: flex; align-items: center;">
+                <p style="color: white; padding: 15px; font-size: 16px; margin-left: -80px;">Our Services</p>
+                <img src="Photos/arrow-alt-circle-down.webp" alt="" style="margin-top: -12px; height: 15px; width: 15px;">
+            </div>
         </div>
-      </div>
     
-      
-    <div class="container mt-5">
-      <h2 class="custom-heading" style="font-family: Oxanium; font-size: 35px; margin-bottom: 30px; margin-top: -100px;">Organizational Transformation through Generative AI:</h2>
-      <div class="row align-items-center">
-          <!-- Image Section -->
-          <div class="col-md-6 image-container">
-              <img style="padding: 30px; border-radius: 40px;  " src="Photos/30.webp" alt="Generative AI">
-          </div>
-          <!-- Text Section -->
-          <div class="col-md-6">
-              <p class="custom-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px;">
-                  Implementing Generative AI (GenAI) technologies doesn’t just involve adopting 
-                  new tools and techniques; it requires a holistic transformation of how an organization
-                   operates, thinks, and delivers value. This transformation spans several critical areas: culture,
-                    processes, structures, and technology. The key to success lies in seamlessly integrating AI into the organization
-                   while aligning it with broader strategic objectives. Here's how an organization can transform by leveraging Generative AI.
-              </p>
-          </div>
-      </div>
-    </div>
+        <div style="background-image:url(Photos/Frame\ 29\ \(1\).webp); padding-right: 50px; padding-top: 50px;">
     
-    <h3 style="font-family: Oxanium; font-size: 35px; margin-left: 70px; margin-top: 20px;">Developing the Generative AI Technology Stack:</h3>
-    <!-- lest side 1 -->
-    <div class="container my-5">
-        <div class="row align-items-center">
-          <!-- Left Side: Text -->
-          <div class="col-md-7">
-            <!-- <h3 class="heading-text mb-3" style="font-family: Oxanium; font-size: 35px; margin-top: -40px;">Developing the Generative AI Technology Stack:</h3> -->
-            <p class="content-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px; ">
-                Building a robust Generative Al (GenAl) technology stack is critical to ensuring that an organization can effectively implement,
-                scale, and maintain Al-driven solutions. A well-defined technology stack not only supports the deployment of Al models but also 
-                ensures seamless integration with existing systems and scalability for future growth. Below are the core components and 
-                considerations for developing a comprehensive GenAl technology stack
-            </p>
-          </div>
-      
-          <!-- Right Side: Image 1-->
-          <div class="col-md-5 image-section text-center">
-            <img style="padding: 30px; border-radius: 40px;" src="Photos/28.webp" alt="">
-          </div>
+            <!-- img 1 -->
+            <div class="container mt-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="fw-bold" style="margin-left: 60px; font-size: 38px; font-family: Poppins;">Retail
+                            Industry Overview</h2>
+                        <p class="fw-medium" style="margin-left: 70px; font-size: 25px; font-family: Poppins;">The retail
+                            industry sells goods and services to <br> consumers through various channels, <br> including:
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img style="width: 500px; height: 250px; margin-left: 30px;" src="Photos/100.webp" class="img-fluid"
+                            alt="CPG Industry Overview">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div>
+            <ol style="margin-left: 110px; font-size: 23px; margin-top: 30px; font-family: Poppins; font-weight: lighter;">
+                <li>Brick-and-Mortar Stores: Physical stores where customers can browse and purchase products.
     
-        <!-- left Side image 02-->
-        <div class="container">
-            <h3 class="header-text"style="font-family: Oxanium; font-size: 35px;">Leveraging Industry-Specific Knowledge with Generative AI</h3>
-        
-            <div class="image-container">
-                <img  style="margin-top: 40px; padding: 30px; border-radius: 40px;" src="Photos/29.webp" alt="Generative AI" class="image"> 
-        
-                <div class="content">
-                    <p style="font-family: Poppins; font-size: 25px; text-align: justify; padding-left: 50px; margin-top: 50px;">Generative Al (GenAI) can transform a wide variety of industries by delivering tailored solutions 
-                       that address unique challenges, optimize processes, and unlock new opportunities. By leveraging industry-specific knowledge, 
-                       businesses can enhance the impact of Al technologies, making them more relevant and actionable. Whether for healthcare, 
-                       finance, manufacturing, retail, or other sectors, understanding the intricacies of the industry is crucial to building Al solutions that deliver value.</p>
+                </li>
+                <li>E-commerce: Online platforms where customers can browse and purchase products.
+                </li>
+                <li>Omnichannel Retailing: Seamless shopping experience across online and offline channels.</li>
+            </ol>
+        </div>
+    
+        <!-- img 2 -->
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="fw-bold" style="margin-left: 40px; font-size: 38px; font-family: Poppins; ">CPG Industry
+                        Overview</h2>
+                    <p class="fw-medium"
+                        style="margin-left: 70px; font-size: 23px; font-family: Poppins; font-weight: lighter;">The CPG
+                        industry manufactures and distributes consumer goods, including:</p>
+                    <ol style="font-size: 23px; margin-left: 40px; font-family: Poppins; font-weight: lighter;">
+                        <li>Food and Beverages</li>
+                        <li>Household and Personal Care Products</li>
+                        <li>Apparel and Footwear</li>
+                    </ol>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img style="width: 500px; height: 250px;" src="Photos/101.webp" class="img-fluid"
+                        alt="CPG Industry Overview">
                 </div>
             </div>
         </div>
     
     
-    <!-- live Project -->
-    <div  class="container my-5" style="background-image: url(Photos/31.webp); width: 100%; height: 344px; border-radius: 20px;">
-        <h3 style="text-decoration: underline; "><b style="font-family:Oxanium; margin-left: 20px;">Live Project Program</b></h3>
-        <ul style="font-size: 20px; font-family: Poppins;">
-          <li>By AI/ML Industry Experts</li>
-          <li>Duration - 24 Weeks Program</li>
-          <li>Limited Slots</li>
-        </ul>
-        <button style="margin-left: 85%; margin-top: 80px; border-radius: 30px;  height: 60px; width: 160px; border: none; box-shadow: inset 2px 2px 2px 2px gray;"><b>Enroll Now</b></button>
-      </div>
+        <div class="col-12 fs-5">
+            <h1
+                style="margin-top: 35px; font-weight: bolder; margin-left: 100px; font-size: 42px; margin-top: 50px; font-family: Poppins;">
+                Services</h1>
+            <h4 style="margin-left: 130px; margin-top: 20px; font-size: 23px; font-family: Poppins; ">MPT play a vital role
+                in supporting the retail and CPG industry by providing a range of services, including:</h4>
+            <ol
+                style="margin-left: 130px; padding-right: 50px; margin-top: 20px; font-size: 23px; font-family: Poppins; font-weight: lighter;">
+                <li>Enterprise Resource Planning (ERP): Software solutions for managing business operations, including
+                    production planning, inventory management, and supply chain management.</li>
+                <li>Manufacturing Execution Systems (MES): Software solutions for managing production operations, including
+                    scheduling, quality control, and inventory management.</li>
+                <li>Supply Chain Management (SCM): Software solutions for managing supply chain operations, including
+                    procurement, logistics, and distribution.</li>
+                <li>Industrial Automation: Solutions for automating manufacturing processes, including robotics, machine
+                    learning, and IoT.</li>
+                <li>Data Analytics: Services that help manufacturers analyze and interpret large datasets, including
+                    predictive analytics and business intelligence.</li>
+                <li>Cloud Computing: Cloud-based infrastructure, platforms, and software that support manufacturing
+                    operations, including ERP, MES, and SCM.</li>
+                <li>Artificial Intelligence (AI) and Machine Learning (ML): Solutions that apply Al and ML to
+                    manufacturing operations, including predictive maintenance, quality control, and supply chain
+                    optimization.</li>
+                <li>Internet of Things (IoT): Solutions that leverage IoT data from sensors and devices to improve
+                    manufacturing operations, including predictive maintenance, quality control, and energy management.</li>
+                <li>3D Printing and Additive Manufacturing: Solutions for designing and producing complex products using 3D
+                    printing and additive manufacturing technologies.</li>
+                <li>Cybersecurity: Solutions that protect manufacturers from cyber threats, including network security,
+                    endpoint security, and incident response.</li>
+            </ol>
+        </div>
     
-   
+        <div class="row" style="margin-top: 80px; margin-bottom: 60px;">
+            <div class=" col-md-6 col-sm-6 col-12">
+                <img src="Photos/102.webp" class="img-fluid" alt="" height="600px" width="500px"
+                    style="margin-left: 100px; border-radius: 20px;">
+            </div>
+            <div class=" col-md-6 col-sm-6 col-12">
+                <img src="Photos/103.webp" class="img-fluid" alt="" height="600px" width="500px"
+                    style="margin-left: 20px; border-radius: 20px;">
+            </div>
+        </div>
     
     
       

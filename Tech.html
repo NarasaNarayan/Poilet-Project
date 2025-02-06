@@ -53,74 +53,84 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* body{
-            box-sizing: border-box;
-            width: 100%;
-            max-width: 100%;
+        body {
             overflow-x: hidden;
-        } */
-         .image-section img {
-          border-radius: 10px; /* Rounded corners */
-          max-width: 100%; /* Responsive */
-          height: auto; /* Maintain aspect ratio */
         }
-        .heading-text {
-          font-family: 'Arial', sans-serif;
-          /* font-weight: bold; */
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            max-width: 600px;
+            text-align: center;
         }
-        .content-text {
-          font-size: 1.1rem;
-          line-height: 1.8;
+        .hero-section  h1 {
+            font-family: 'Oxanium', sans-serif;
+            font-size: 52px;
+            font-weight: bold;
+           margin-left: 0 !important;
+            margin-top: 150px;
         }
-        /* -------------- */
-        .container {
-                padding-top: 20px;
+        p {
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .IOT{
+            img{
+                margin-top: 50px;
+                
             }
-    
-            .header-text {
-                font-size: 24px;
-                /* font-weight: bold; */
-                margin-bottom: 20px;
-                font-family: 'Arial', sans-serif;
-            }
-    
-            .image-container {
-                display: flex;
-            }
-    
-            .image {
-                width: 300px;
-                height: 300px;
-                margin-right: 20px;
-            }
-    
-            .content {
-                line-height: 1.5;
-                margin-bottom: 20px;
-            }
-    
-            .highlight {
-                font-weight: bold;
-            } 
-    
-    
-    /* img 2 left css */
-    .custom-heading {
-                /* font-weight: bold; */
-                /* text-align: center; */
-                margin-bottom: 30px;
-            }
-             .custom-text {
-                text-align: justify;
-            }
-            .image-container img {
-                width: 80%;
-                height: 450px;
-                border-radius: 10px;
-            }
-    
-      </style>
+        }
 
+        @media (max-width: 768px) {
+            
+                .image-1{
+                /* height: auto; */
+                background-size: 480px 400px;
+                background-repeat: no-repeat;
+                }
+            
+            h1 {
+                font-size: 18px;
+                text-align: center;
+               
+            }
+            p {
+                font-size: 13px;
+                /* margin-bottom: 80px; */
+            }     
+            .num{
+            margin-top: -100px;
+        }
+        .IOT{
+            margin-bottom: 80px;
+        }      
+        }
+        .overview-text{
+            p{
+             font-size:13px;
+            }            
+        }
+        .nav{
+            h1{
+                margin-top: 80px;
+                margin-left: 20px;
+            }
+            ol{
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+        }
+        .image img {            
+                margin-top: 30px;
+                padding-left: 50px;
+                padding-right: 50px;
+                border-radius: 100px;
+        }
+        .nav li{
+            font-family: poppins;
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 
@@ -131,8 +141,9 @@
 
 
     <nav class="navbar  navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-            <a class="pt-3 pb-3 " href="index.html"><img width="120px" height="100px" src="Photo/MPT.webp" alt=""></a>
+        <div class="container-fluid navbar-img">
+            <a class="pt-3 pb-3 " href="index.html"><img   width="120px" height="100px"
+                    src="Photo/MPT.webp" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -148,17 +159,16 @@
                             <div class="row" style="width: 100%; margin: 0;">
                                 <div class="col-md-6">
                                     <li><a class="dropdown-item" href="Automative.html">Automotive</a></li>
-                                    <li><a class="dropdown-item" href="#">Higher Education and Research</a></li>
-                                    <li><a class="dropdown-item" href="#">Insurance</a></li>
-                                    <li><a class="dropdown-item" href="Telecom.html">Telecom, Media & Technology</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Travel, Transportation & Logistics</a></li>
+                                    <li><a class="dropdown-item" href="Higher.html">Higher Education and Research</a></li>
+                                    <li><a class="dropdown-item" href="Insurence.html">Insurance</a></li>
+                                    <li><a class="dropdown-item" href="Telecom.html">Telecom, Media & Technology</a></li>
+                                    <li><a class="dropdown-item" href="TravelandLogistics.html">Travel, Transportation & Logistics</a></li>
                                 </div>
                                 <div class="col-md-6">
                                     <li><a class="dropdown-item" href="Financial.html">Financial Services</a></li>
-                                    <li><a class="dropdown-item" href="#">Health Care</a></li>
-                                    <li><a class="dropdown-item" href="#">Manufacturing</a></li>
-                                    <li><a class="dropdown-item" href="#">Retail & CPG</a></li>
+                                    <li><a class="dropdown-item" href="Healthcare.html"> Health Care</a></li>
+                                    <li><a class="dropdown-item" href="Manufature.html">Manufacturing</a></li>
+                                    <li><a class="dropdown-item" href="RetailandCPG.html">Retail & CPG</a></li>
                                 </div>
                             </div>
                             <div class="row">
@@ -175,14 +185,14 @@
                             <div class="industries-title">Services <span class="dropdown-indicator"></span></div>
                             <div class="row ">
                                 <div class="col-md-6">
-                                    <li><a class="dropdown-item" href="#">Application Service</a></li>
-                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
-                                    <li><a class="dropdown-item" href="#">Network Management</a></li>
-                                    <li><a class="dropdown-item" href="#">Business Process Service</a></li>
-                                    <li><a class="dropdown-item" href="#">Cloud</a></li>
-                                    <li><a class="dropdown-item" href="#">Tech Solution and Integration</a></li>
-                                    <li><a class="dropdown-item" href="#">Data in Gen-Al</a></li>
-                                    <li><a class="dropdown-item" href="#">Data Analytics</a></li>
+                                    <li><a class="dropdown-item" href="Application.html">Application Service</a></li>
+                                    <li><a class="dropdown-item" href="Webdevlopment.html">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="Network.html">Network Management</a></li>
+                                    <li><a class="dropdown-item" href="Business.html">Business Process Service</a></li>
+                                    <li><a class="dropdown-item" href="Cloud.html">Cloud</a></li>
+                                    <li><a class="dropdown-item" href="Tech.html">Tech Solution and Integration</a></li>
+                                    <li><a class="dropdown-item" href="GEN-AI.html">Data in Gen-Al</a></li>
+                                    <li><a class="dropdown-item" href="Dataanalist.html">Data Analytics</a></li>
                                 </div>
                                 <div class="col-md-6">
                                     <img style="margin-top: 170px;" width="350px" height="350px" src="Photo/20.webp"
@@ -237,9 +247,10 @@
                             </div>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
-
+                    <li class="nav-item"><a class="nav-link" href="#"><img width="30px" height="-30px" class="img-fluid"
+                                src="Photo/137.webp" alt=""></a></li>
                     <!-- <img class="bg-dark" width="50px" height="50px" src="Photo/phone-alt.webp" alt=""> -->
                     <li class="nav-item"><a class="nav-link" href="#">+9886366450</a></li>
                 </ul>
@@ -248,115 +259,151 @@
     </nav>
     <!-- Navbar ends here  -->
 
-  
-    
-
-        <div  
-        style="background-image: url(Photos/25.webp); width: 100%; height: 415px; background-size: cover; background-repeat: no-repeat; border-radius:  0px 0px 12px 12px; margin-top: 150px;">
-           <div >
-            <h1 style=" font-family: Oxanium; padding-top: 100px; font-size: 52px; margin-left: 30px;"><b>Generative AI</b></h1>
-           </div>
-            <p style="font-family: Inter; font-size: 18px; margin-left: 30px;" >MPT's Generative Al strategy is designed to help businesses <br>
-              navigate the complex landscape of Generative Al by offering <br>
-              a comprehensive approach.</p>
-        </div>
-    
-    <!-- lft side 1 -->
-    <div class="container my-5">
-        <div class="row align-items-center">    
-          <!-- Left Side: Text -->
-          <div class="col-md-7">
-            <h3 class="heading-text mb-3" style="font-family: Oxanium; font-size: 35px; padding-bottom: 100px;">Defining the Generative AI Journey:</h3>
-            <p class="content-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px; padding-bottom: 150px;">
-              It is a critical first step for any organization aiming to harness the power of Generative AI.
-              This journey encompasses a series of strategic, technological, and operational milestones
-              that allow a company to effectively implement and scale AI solutions. Below are the key
-              phases involved in defining the Generative AI journey:
-            </p>
-          </div>
-      
-          <!-- Right Side: Image 1-->
-          <div class="col-md-5 image-section text-center">
-            <img style="padding: 30px; border-radius: 40px; " src="Photos/26.webp" alt="">
-          </div>
-        </div>
-      </div>
-    
-      
-    <div class="container mt-5">
-      <h2 class="custom-heading" style="font-family: Oxanium; font-size: 35px; margin-bottom: 30px; margin-top: -100px;">Organizational Transformation through Generative AI:</h2>
-      <div class="row align-items-center">
-          <!-- Image Section -->
-          <div class="col-md-6 image-container">
-              <img style="padding: 30px; border-radius: 40px;  " src="Photos/30.webp" alt="Generative AI">
-          </div>
-          <!-- Text Section -->
-          <div class="col-md-6">
-              <p class="custom-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px;">
-                  Implementing Generative AI (GenAI) technologies doesn’t just involve adopting 
-                  new tools and techniques; it requires a holistic transformation of how an organization
-                   operates, thinks, and delivers value. This transformation spans several critical areas: culture,
-                    processes, structures, and technology. The key to success lies in seamlessly integrating AI into the organization
-                   while aligning it with broader strategic objectives. Here's how an organization can transform by leveraging Generative AI.
-              </p>
-          </div>
-      </div>
-    </div>
-    
-    <h3 style="font-family: Oxanium; font-size: 35px; margin-left: 70px; margin-top: 20px;">Developing the Generative AI Technology Stack:</h3>
-    <!-- lest side 1 -->
-    <div class="container my-5">
-        <div class="row align-items-center">
-          <!-- Left Side: Text -->
-          <div class="col-md-7">
-            <!-- <h3 class="heading-text mb-3" style="font-family: Oxanium; font-size: 35px; margin-top: -40px;">Developing the Generative AI Technology Stack:</h3> -->
-            <p class="content-text" style="font-family: Poppins; font-size: 25px; text-align: justify; padding-right: 50px; ">
-                Building a robust Generative Al (GenAl) technology stack is critical to ensuring that an organization can effectively implement,
-                scale, and maintain Al-driven solutions. A well-defined technology stack not only supports the deployment of Al models but also 
-                ensures seamless integration with existing systems and scalability for future growth. Below are the core components and 
-                considerations for developing a comprehensive GenAl technology stack
-            </p>
-          </div>
-      
-          <!-- Right Side: Image 1-->
-          <div class="col-md-5 image-section text-center">
-            <img style="padding: 30px; border-radius: 40px;" src="Photos/28.webp" alt="">
-          </div>
-        </div>
-      </div>
-    
-        <!-- left Side image 02-->
-        <div class="container">
-            <h3 class="header-text"style="font-family: Oxanium; font-size: 35px;">Leveraging Industry-Specific Knowledge with Generative AI</h3>
-        
-            <div class="image-container">
-                <img  style="margin-top: 40px; padding: 30px; border-radius: 40px;" src="Photos/29.webp" alt="Generative AI" class="image"> 
-        
-                <div class="content">
-                    <p style="font-family: Poppins; font-size: 25px; text-align: justify; padding-left: 50px; margin-top: 50px;">Generative Al (GenAI) can transform a wide variety of industries by delivering tailored solutions 
-                       that address unique challenges, optimize processes, and unlock new opportunities. By leveraging industry-specific knowledge, 
-                       businesses can enhance the impact of Al technologies, making them more relevant and actionable. Whether for healthcare, 
-                       finance, manufacturing, retail, or other sectors, understanding the intricacies of the industry is crucial to building Al solutions that deliver value.</p>
-                </div>
+    <div class="container-fluid" style="margin-top: 150px;">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 image-1" style="background-image: url(images/1.webp);height: 500px; background-repeat:no repeat;">
+        <div class="hero-section">
+            <h1 class="text-white">TECH AND INTEGRATION</h1>
+            <div class="text-box">
+                <p class="text-white">Here are some network management services provided by MPT.</p>
             </div>
         </div>
-    
-    
-    <!-- live Project -->
-    <div  class="container my-5" style="background-image: url(Photos/31.webp); width: 100%; height: 344px; border-radius: 20px;">
-        <h3 style="text-decoration: underline; "><b style="font-family:Oxanium; margin-left: 20px;">Live Project Program</b></h3>
-        <ul style="font-size: 20px; font-family: Poppins;">
-          <li>By AI/ML Industry Experts</li>
-          <li>Duration - 24 Weeks Program</li>
-          <li>Limited Slots</li>
-        </ul>
-        <button style="margin-left: 85%; margin-top: 80px; border-radius: 30px;  height: 60px; width: 160px; border: none; box-shadow: inset 2px 2px 2px 2px gray;"><b>Enroll Now</b></button>
-      </div>
-    
-   
-    
-    
-      
+    </div>
+</div>
+        <!-- hero section ends here  -->
+
+        <div class="row bg-dark text-white overview-text shadow-lg num">
+            <div class=" col-4 col-md-2 text-center py-2 pb-4">
+                <p class="mb-0">Our Services</3>
+                    <img src="images/Financialservice/arrow-alt-circle-down.webp" alt="">
+            </div>
+            <div class=" col-4 col-md-2">
+            </div>
+        </div>
+        <!-- over view ends here  -->
+
+        <div class="row nav ">
+            <div class=" text-left ">
+                <h1 class="fw-bolder">Application Development and Integration</h1>
+                <ol>
+                    <li>Custom Application Development: Developing tailored applications to meet specific business needs.
+                    </li>
+                    <li>Application Integration: Integrating apps, systems, and services for seamless data exchange.</li>
+                    <li>API Development and Integration: Designing, developing, and integrating APIs to enable secure data exchange.</li>
+                </ol>
+            </div>
+            <div class="image">
+                <img src="images/16.webp" class="img-fluid rounded" alt="Automotive Industry">
+            </div>
+        </div>
+
+        <div class="row nav ">
+            <div class=" text-left">
+                <h1 class="fw-bolder">Data Management and Analytics</h1>
+                <ol>
+                    <li>Data Warehousing and Business Intelligence: Designing and implementing data warehouses and BI solutions.</li>
+                    <li>Data Analytics and Visualization: Offering data analytics and visualization for smarter business decisions.</li>
+                    <li>Big Data and NoSQL Solutions: Implementing NoSQL and big data solutions for scalable storage and processing.</li>
+                </ol>
+            </div>
+            <div class="image">
+                <img src="images/17.webp" class="img-fluid rounded" alt="Automotive Industry">
+            </div>
+        </div>
+
+        <div class="row nav ">
+            <div class=" text-left">
+                <h1 class="fw-bolder">Cloud Computing and Migration</h1>
+                <ol>
+                    <li>Cloud Assessment and Migration: Assessing cloud readiness and migrating applications and data to cloud environments.</li>
+                    <li>Cloud Deployment and Management: Deploying and managing IaaS, PaaS, and SaaS.</li>
+                    <li>Cloud Security and Compliance: Ensuring cloud security and compliance with regulatory requirements.</li>
+                </ol>
+            </div>
+            <div class="image">
+                <img src="images/18.webp" class="img-fluid rounded" alt="Automotive Industry">
+            </div>
+        </div>
+
+        <div class="row nav ">
+            <div class=" text-left">
+                <h1 class="fw-bolder">Cybersecurity and Risk Management</h1>
+                <ol>
+                    <li>Cybersecurity Assessment and Testing: Assessing cybersecurity posture and testing for vulnerabilities.</li>
+                    <li>Incident Response and Recovery: Developing and implementing incident response and recovery plans.</li>
+                    <li>Security Information and Event Management (SIEM): Implementing SIEM solutions for real-time security monitoring.</li>
+                </ol>
+            </div>
+            <div class="image">
+                <img src="images/19.webp" class="img-fluid rounded" alt="Automotive Industry">
+            </div>
+        </div>
+
+
+        <div class="row nav ">
+            <div class=" text-left">
+                <h1 class="fw-bolder">IT Infrastructure and Networking</h1>
+                <ol>
+                    <li>Network Design and Implementation: Designing and implementing LAN, WAN, and Wi-Fi architectures</li>
+                    <li>Server and Storage Solutions: Implementing server, storage, virtualization, and cloud solutions</li>
+                    <li>IT Infrastructure Management: Managing IT infrastructure: monitoring, maintenance, troubleshooting</li>
+                </ol>
+            </div>
+            <div class="image">
+                <img src="images/21.webp" class="img-fluid rounded" alt="Automotive Industry">
+            </div>
+        </div>
+
+        <div class="row nav ">
+            <div class=" text-left">
+                <h1 class="fw-bolder">Artificial Intelligence and Machine Learning</h1>
+                <ol>
+                    <li>AI and ML Consulting: Providing AI and ML consulting services to identify business opportunities.</li>
+                    <li>AI and ML Development: Developing AI/ML solutions: chatbots, analytics, computer vision.</li>
+                    <li>AI and ML Integration: Integrating AI and ML solutions with existing systems and applications</li>
+                </ol>
+            </div>
+            <div class="image">
+                <img src="images/22.webp" class="img-fluid rounded" alt="Automotive Industry">
+            </div>
+        </div>
+
+        <div class="row nav ">
+            <div class=" IOT">
+                <h1 class="fw-bolder">Internet of Things (IoT)</h1>
+                <ol>
+                    <li>IoT Consulting: Providing IoT consulting services to identify business opportunities.</li>
+                    <li>IoT Development: Developing IoT solutions, including device integration, data analytics, and security.</li>
+                    <li>IoT Integration: Integrating IoT solutions with existing systems and applications</li>
+                </ol>
+            </div>
+            <div class="image" style="margin-top: -100px;">
+                <img src="images/IOT img.webp" class="img-fluid rounded" alt="Automotive Industry">
+            </div>
+        </div>
+
+        <div class="row nav" style="margin-top: -50px;">
+            <div class=" text-left">
+                <h1 class="fw-bolder">Blockchain</h1>
+                <ol>
+                    <li>Blockchain Consulting: Providing blockchain consulting services to identify business opportunities</li>
+                    <li>Blockchain Development: Developing blockchain solutions: smart contracts, ledger, cryptocurrency.</li>
+                    <li>Blockchain Integration: Integrating blockchain solutions with existing systems and applications.</li>
+                </ol>
+            </div>
+            <div class="image">
+                <img src="images/20.webp" class="img-fluid rounded" alt="Automotive Industry">
+            </div>
+        </div>
+
+
+
+
+
+
+       
+        </div>
+    </div>
 
                         <!-- footer section starts here  -->
 
