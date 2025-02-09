@@ -485,7 +485,7 @@ body {
 
 @media (max-width: 768px) {
   .slider-mobile {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     img {
       width: 300px;
