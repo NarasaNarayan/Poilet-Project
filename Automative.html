@@ -71,7 +71,7 @@
         @media (max-width: 768px) {
             .hero-section {
                 height: auto;
-                background-size: 600px 280px;
+                background-size: 765px 300px;
                 object-fit: cover;
             }
             h1 {
@@ -94,6 +94,20 @@
              font-size:16px;
             }
         }
+        @media (max-width: 426px) {
+            .hero-section {
+                height: auto;
+                background-size: 465px 300px;
+               
+            }
+        }
+        @media (max-width: 376px) {
+            .hero-section {
+                height: auto;
+                background-size: 465px 320px;
+               
+            }
+        }
  </style>
    
 </head>
@@ -106,15 +120,14 @@
 
     <nav class="navbar  navbar-expand-lg navbar-light ">
         <div class="container-fluid navbar-img">
-            <a class="pt-3 pb-3 " href="index.html"><img   width="120px" height="100px"
-                    src="Photo/MPT.webp" alt=""></a>
+            <a class="pt-3 pb-3 " href="index.html"><img class="logo-image" width="120px" height="100px" src="Photo/MPT.webp" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link mx-5" href="#" id="industriesDropdown" role="button"
+                        <a class="nav-link " href="#" id="industriesDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Industries
                         </a>
@@ -123,10 +136,13 @@
                             <div class="row" style="width: 100%; margin: 0;">
                                 <div class="col-md-6">
                                     <li><a class="dropdown-item" href="Automative.html">Automotive</a></li>
-                                    <li><a class="dropdown-item" href="Higher.html">Higher Education and Research</a></li>
+                                    <li><a class="dropdown-item" href="Higher.html">Higher Education and Research</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="Insurence.html">Insurance</a></li>
-                                    <li><a class="dropdown-item" href="Telecom.html">Telecom, Media & Technology</a></li>
-                                    <li><a class="dropdown-item" href="TravelandLogistics.html">Travel, Transportation & Logistics</a></li>
+                                    <li><a class="dropdown-item" href="Telecom.html">Telecom, Media & Technology</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="TravelandLogistics.html">Travel, Transportation &
+                                            Logistics</a></li>
                                 </div>
                                 <div class="col-md-6">
                                     <li><a class="dropdown-item" href="Financial.html">Financial Services</a></li>
@@ -174,7 +190,8 @@
                             <div class="industries-title">About Us <span class="dropdown-indicator"></span></div>
                             <div class="row">
                                 <div class="col-md-6">
-                                     <li><a class="dropdown-item" href="Whoweare.html">Who we are</a></li>                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="Whoweare.html">Who we are</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
                                     <li><a class="dropdown-item" href="#">MPT Group Corporation Profile</a></li>
                                     <li><a class="dropdown-item" href="#">Message from CEO</a></li>
                                     <li><a class="dropdown-item" href="#">About MPT</a></li>
@@ -200,7 +217,7 @@
                                 <div class="col-md-6">
                                     <li><a class="dropdown-item" href="Verysoon.html">Search Jobs</a></li>
                                     <li><a class="dropdown-item" href="Verysoon.html">Careers Consultation</a></li>
-                                 
+
 
                                 </div>
                                 <div class="col-md-6">
@@ -212,29 +229,34 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="Contact.html">Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><img width="30px" height="-30px" class="img-fluid"
-                                src="Photo/137.webp" alt=""></a></li>
-                                <li class="nav-item"><a class="nav-link" href="tel:+91-8310884090"> <i class="fa-solid fa-phone"></i> +91-8310884090</a></li>                </ul>
+
+                    <li class="nav-item"><a class="nav-link" href="tel:+91-8310884090"> <i
+                                class="fa-solid fa-phone"></i> +91-8310884090</a></li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- Navbar ends here  -->
 
     <div class="container-fluid hero-section" style="margin-top: 150px;">
-        <div class="">
-            <h1 class="gradient-text">Automotive</h1>
-            <div class="text-box">
-                <p>Accelerating a connected and data-driven digital future.</p>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-sm-12">
+                <div class="">
+                    <h1 class="gradient-text">Automotive</h1>
+                    <div class="text-box">
+                        <p>Accelerating a connected and data-driven digital future.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
         <!-- hero section ends here  -->
         <div class="row bg-dark text-white overview-text shadow-lg">
-            <div class=" col-3 col-md-2 text-center py-2">
+            <div class=" col-5  col-sm-2 col-md-4 text-center py-2">
                 <p class="mb-0">Overview</3>
                     <img src="images/Financialservice/arrow-alt-circle-down.webp" alt="">
             </div>
-            <div class=" col-4 col-md-2 text-center py-2">
+            <div class=" col-5 col-sm-2 col-md-4 text-center py-2">
                 <p class="mb-0">Our Services</3>
                     <img src="images/Financialservice/arrow-alt-circle-down.webp" alt="">
             </div>
